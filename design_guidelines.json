@@ -1,0 +1,159 @@
+{
+  "design_guidelines": {
+    "project_name": "Sankalp - Taste of South (Dehradun Landing Page)",
+    "description": "A high-conversion, emotion-first landing page for an award-winning South Indian restaurant franchise in Dehradun.",
+    "brand_identity": {
+      "tone": "Authentic, Royal, Welcoming, Premium",
+      "archetype": "The Creator (Culinary Art) + The Ruler (Award Winning)",
+      "keywords": ["Heritage", "Crispy", "Award-Winning", "Family", "Aromatic"]
+    },
+    "typography": {
+      "primary_font": {
+        "name": "Playfair Display",
+        "usage": "Headings (H1-H3), Hero Text",
+        "weights": ["400", "600", "700"],
+        "fallback": "serif"
+      },
+      "secondary_font": {
+        "name": "Manrope",
+        "usage": "Body text, UI elements, Buttons",
+        "weights": ["400", "500", "600"],
+        "fallback": "sans-serif"
+      },
+      "accent_font": {
+        "name": "Italiana",
+        "usage": "Overlines, Decorative labels",
+        "weights": ["400"],
+        "fallback": "serif"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": "#E35F21", 
+        "primary_dark": "#C64B18",
+        "secondary": "#D4AF37", 
+        "secondary_light": "#F3E5AB",
+        "background": "#FAFAF5", 
+        "surface": "#FFFFFF",
+        "text_primary": "#1A1A1A",
+        "text_secondary": "#4A4A4A",
+        "accent_green": "#4F7942", 
+        "dark_surface": "#121212"
+      },
+      "gradients": {
+        "gold_lux": "linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%)",
+        "spicy_heat": "linear-gradient(135deg, #FF8C42 0%, #E35F21 100%)",
+        "deep_South": "linear-gradient(to bottom, #121212, #1A1A1A)"
+      }
+    },
+    "spacing_layout": {
+      "container_max_width": "max-w-7xl",
+      "section_padding": "py-24 md:py-32",
+      "grid_gap": "gap-8 md:gap-12",
+      "border_radius": {
+        "button": "rounded-full",
+        "card": "rounded-2xl",
+        "image": "rounded-3xl"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#E35F21] text-white hover:bg-[#C64B18] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 rounded-full px-8 py-4 font-semibold tracking-wide",
+        "secondary": "border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-white transition-all duration-300 rounded-full px-8 py-4 font-medium",
+        "floating_offer": "fixed bottom-8 right-8 z-50 bg-gradient-to-r from-[#E35F21] to-[#FF8C42] text-white shadow-2xl rounded-full px-6 py-4 animate-bounce-slow hover:scale-105 transition-transform cursor-pointer border-4 border-white/20 backdrop-blur-md"
+      },
+      "cards": {
+        "dish_card": "group relative overflow-hidden rounded-3xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500",
+        "testimonial_card": "bg-[#FAF9F6] p-8 rounded-2xl border border-[#E5E5E5] relative"
+      },
+      "sections": {
+        "hero": "h-screen min-h-[800px] relative flex items-center justify-center overflow-hidden",
+        "marquee": "bg-[#1A1A1A] py-4 text-[#D4AF37] uppercase tracking-[0.2em] font-medium"
+      }
+    },
+    "assets": {
+      "images": {
+        "hero_slides": [
+          "https://sankalprestaurants.com/wp-content/uploads/2021/08/Sankalp-Restauratn-Website-Signature-Dish-01-1024x819.jpg",
+          "https://sankalprestaurants.com/wp-content/uploads/2023/08/DSC01580-1024x683.jpg",
+          "https://sankalprestaurants.com/wp-content/uploads/2023/08/Chaos-Dosa-1024x683.jpg"
+        ],
+        "signature_dishes": [
+          {
+            "url": "https://sankalprestaurants.com/wp-content/uploads/2021/08/Sankalp-Restauratn-Website-Signature-Dish-01-1024x819.jpg",
+            "title": "Signature Dosa",
+            "desc": "Crispy, golden perfection."
+          },
+          {
+            "url": "https://sankalprestaurants.com/wp-content/uploads/2023/08/Chaos-Dosa-1024x683.jpg",
+            "title": "Chaos Dosa",
+            "desc": "A fusion of flavors."
+          },
+          {
+            "url": "https://sankalprestaurants.com/wp-content/uploads/2023/08/Channai-Pizza-Utthpa-1024x683.jpg",
+            "title": "Chennai Pizza Uthappam",
+            "desc": "Modern twist on classic."
+          },
+          {
+            "url": "https://sankalprestaurants.com/wp-content/uploads/2023/08/Butter-Uttapam-1024x683.jpg",
+            "title": "Butter Uthappam",
+            "desc": "Soft, fluffy, rich."
+          }
+        ],
+        "logo": "https://sankalprestaurants.com/wp-content/uploads/2021/12/Sankalp_thetasteofindia.svg",
+        "textures": [
+           "https://images.unsplash.com/photo-1764344815366-6ccf59fb13d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbHV4dXJ5JTIwc291dGglMjBpbmRpYW4lMjByZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBibHVyJTIwYmFja2dyb3VuZCUyMGJhbmFuYSUyMGxlYWYlMjB0ZXh0dXJlfGVufDB8fHx8MTc3MTY1ODE1MHww&ixlib=rb-4.1.0&q=85"
+        ]
+      },
+      "links": {
+        "booking": "https://url-shortener.me/DI2X",
+        "menu": "https://drive.google.com/file/d/1rO-cVM7lLU6qjKJ5xtufxVW9vN2Li3oI/view?usp=sharing",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Sankalp+Restaurant+Dehradun+GMS+Road"
+      }
+    },
+    "content_strategy": {
+      "testimonials": [
+        {
+          "name": "Ghumakkad Foodie",
+          "role": "Local Guide (42 Reviews)",
+          "rating": 5,
+          "text": "Sankalp Restaurant: one of the most famous south indian restaurant chain in India has now opened its new Restaurant in Dehradun. They serve amazing range of South Indian food including various Dosas, Idli and Uttapam. Amazing filter coffee and sizzling Brownie.",
+          "scores": { "food": 5, "service": 5, "atmosphere": 5 }
+        },
+        {
+          "name": "Manoj Madhavan",
+          "role": "Local Guide (257 Reviews)",
+          "rating": 4,
+          "text": "Sankalp... has earned a spot in the Guinness World Records for preparing the longest dosa—an astounding 30 feet. The Dehradun branch upholds this legacy with excellent dining experience. Super crispy dosas, soft fluffy idlis... excellent Kesari Halwa.",
+          "scores": null
+        }
+      ],
+      "awards": [
+        "Guinness World Record Holder",
+        "Times Food Award Winner",
+        "World's Most Awarded South Indian Brand"
+      ]
+    },
+    "instructions_to_main_agent": [
+      "1. IMPLEMENTATION: Create a single-page React app (SPA). Use `react-router-dom` if navigation is needed (e.g. for anchor links).",
+      "2. THEME: Use the 'Royal South' palette. Background should be warm cream (#FAFAF5), not stark white. Text should be dark charcoal.",
+      "3. HERO: Use a full-screen layout. Background image should be one of the high-res food shots with a dark overlay (opacity 40-50%) to ensure text readability.",
+      "4. TYPOGRAPHY: Import 'Playfair Display', 'Manrope', and 'Italiana' from Google Fonts immediately in `index.css`.",
+      "5. ANIMATION: Use `framer-motion` for scroll reveals. Elements should fade up and scale in slightly.",
+      "6. URGENCY: The '20% Off' button MUST be visible at all times (sticky).",
+      "7. TESTIMONIALS: Use a horizontal scroll or carousel for testimonials. Show the star rating clearly.",
+      "8. ACCESSIBILITY: Ensure high contrast between text and background, especially on the hero section.",
+      "9. IMAGES: Use strictly the provided URLs. Do not use placeholders.",
+      "10. MOBILE: Ensure the menu and booking buttons are easily tapable on mobile (min-height 48px).",
+      "11. DATA-TESTID: Add `data-testid` to all interactive elements (buttons, links, inputs).",
+      "12. NO MOCKS: Do not mock data. Use the real testimonials and links provided."
+    ],
+    "universal_guidelines": [
+       "Avoid generic centered layouts.",
+       "Use layered design elements with z-index hierarchy.",
+       "Use glass-morphism effects with backdrop filters.",
+       "Add micro-animations to all interactions.",
+       "Ensure all interactive elements have `data-testid`."
+    ]
+  }
+}
