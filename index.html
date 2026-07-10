@@ -11,7 +11,10 @@
     <!-- 2. Preload Massive Food Banner Image for Immediate Mobile Rendering -->
     <link rel="preload" as="image" href="Nilgiri-Dosa.webp" type="image/webp" fetchpriority="high">
     
-    <!-- 3. Google Conversion Tracking Tag Configuration -->
+    <!-- 3. Critical CSS Stylesheet Loaded First to Unblock Rendering -->
+    <link href="main.f5e274c7.css" rel="stylesheet">
+
+    <!-- 4. Google Conversion Tracking Tag Configuration (Deferred Execution) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11313178953"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -20,7 +23,7 @@
       gtag('config', 'AW-11313178953');
     </script>
 
-    <!-- 4. Phone Click Conversion Event Listener -->
+    <!-- 5. Phone Click Conversion Event Listener -->
     <script>
       function handleCallClick() {
         gtag('event', 'conversion', {
@@ -39,18 +42,15 @@
       });
     </script>
 
-    <!-- 5. Font and External Asset Preloading Links -->
+    <!-- 6. Font and External Asset Preloading Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     
-    <!-- 6. Application Configuration Scripts -->
+    <!-- 7. Application Configuration Scripts (Deferred to Prevent White Screens) -->
     <script>window.addEventListener("error",function(e){e.error instanceof DOMException&&"DataCloneError"===e.error.name&&e.message&&e.message.includes("PerformanceServerTiming")&&(e.stopImmediatePropagation(),e.preventDefault())},!0)</script>
-    <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
-    
-    <!-- 7. Production Application Build Files -->
+    <script defer src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
     <script defer="defer" src="main.60f09b56.js"></script>
-    <link href="main.f5e274c7.css" rel="stylesheet">
 </head>    
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
