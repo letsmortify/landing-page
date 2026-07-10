@@ -1,9 +1,20 @@
 <!doctype html>
 <html lang="en"> 
 <head>
-    <link rel="preload" as="image" href="Nilgiri-Dosa.webp" fetchpriority="high">
+    <!-- 1. Tell mobile devices how to scale the page instantly (Crucial for speed) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 2. Preload your massive food banner image with maximum priority -->
+    <link rel="preload" as="image" href="Nilgiri-Dosa.webp" type="image/webp" fetchpriority="high">
+    
+    <!-- 3. Google Conversion Tracking (Cleaned up and closed properly) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11313178953"></script>
-<script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11313178953');
+    </script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
