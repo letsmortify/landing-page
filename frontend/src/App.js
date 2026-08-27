@@ -168,11 +168,11 @@ const HeroSection = () => {
       
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <span className="font-italiana text-[#D4AF37] text-lg md:text-xl tracking-[0.2em] uppercase mb-4 block animate-fade-in-up">
-          Dehradun's Finest South Indian Experience
+          Sankalp-Taste of South
         </span>
         
         <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl text-white font-bold leading-tight mb-6 animate-fade-in-up stagger-1">
-          Dehradun's Award Winning Choice for Family Get Togethers
+          Authentic South Indian Restaurant on GMS Road, Dehradun
         </h1>
         
         <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 animate-fade-in-up stagger-2">
