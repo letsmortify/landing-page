@@ -129,7 +129,7 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           data-testid="mobile-menu-btn"
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}}
         </button>
       </div>
 
@@ -367,7 +367,6 @@ const Testimonials = () => {
   );
 };
 
-const 
 const VisitingDehradun = () => {
   return (
     <section
@@ -424,7 +423,7 @@ const VisitingDehradun = () => {
     </section>
   );
 };
-MenuCTA = () => {
+const MenuCTA = () => {
   return (
     <section className="menu-section py-20 px-6" data-testid="menu-cta-section">
       <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -472,13 +471,13 @@ const LocationSection = () => {
               </span>
               <h2 className="font-playfair text-3xl md:text-4xl text-white font-bold mb-8">
                 Sankalp - Taste of South
+              </h2>
                 <p className="text-gray-300 leading-relaxed mb-8 max-w-xl">
                   Visit Sankalp for authentic South Indian food on GMS Road, Dehradun.
                   We offer comfortable family seating, convenient parking, fresh dosas,
                   South Indian favourites and piping hot filter coffee.
                 </p>    
-              </h2>
-              
+                            
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-[#E35F21]/20 flex items-center justify-center flex-shrink-0">
