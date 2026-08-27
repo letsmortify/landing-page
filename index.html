@@ -1,66 +1,224 @@
 <!doctype html>
-<html lang="en"> 
+<html lang="en">
 <head>
-    <!-- 1. Technical & Performance Optimization Metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Sankalp Restaurant Dehradun - Award Winning South Indian Cuisine">
-    <title>Sankalp - Taste of South | Dehradun</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
 
-    <!-- 2. Preload Massive Food Banner Image for Immediate Mobile Rendering -->
-    <link rel="preload" as="image" href="Nilgiri-Dosa.webp" type="image/webp" fetchpriority="high">
-    
-    <!-- 3. Critical CSS Stylesheet Loaded First to Unblock Rendering -->
-    <link href="main.f5e274c7.css" rel="stylesheet">
+  <title>Sankalp - Taste of South | Dehradun</title>
+  <meta name="description" content="Sankalp Restaurant Dehradun - Award Winning South Indian Cuisine">
 
-    <!-- 4. Google Conversion Tracking Tag Configuration (Deferred Execution) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11313178953"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-11313178953');
-    </script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Sankalp - Taste of South | Dehradun">
+  <meta property="og:description" content="Award Winning South Indian Cuisine in Dehradun.">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Sankalp - Taste of South">
 
-    <!-- 5. Phone Click Conversion Event Listener -->
-    <script>
-      function handleCallClick() {
-        gtag('event', 'conversion', {
-            'send_to': 'AW-11313178953/call_button_click',         
-            'value': 1.0,
-            'currency': 'INR',
-            'event_callback': function() {
-              console.log('Call click conversion recorded');
-            }
-        });
-      }
-      document.addEventListener('click', function(e) {
-        if (e.target.closest('[data-testid="nav-phone"]') || e.target.closest('a[href^="tel:"]')) {
-          handleCallClick();
+  <!-- Social sharing -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload"
+        as="image"
+        href="Nilgiri-Dosa.webp"
+        type="image/webp"
+        fetchpriority="high">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="main.f5e274c7.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap">
+
+  <!-- Google Ads / Conversion Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11313178953"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'AW-11313178953');
+
+    function handleCallClick() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11313178953/call_button_click',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': function () {
+          console.log('Call click conversion recorded');
         }
       });
-    </script>
+    }
 
-    <!-- 6. Font and External Asset Preloading Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-    
-    <!-- 7. Application Configuration Scripts (Deferred to Prevent White Screens) -->
-    <script>window.addEventListener("error",function(e){e.error instanceof DOMException&&"DataCloneError"===e.error.name&&e.message&&e.message.includes("PerformanceServerTiming")&&(e.stopImmediatePropagation(),e.preventDefault())},!0)</script>
-    <script defer src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
-    <script defer="defer" src="main.60f09b56.js"></script>
-</head>    
+    document.addEventListener('click', function (e) {
+      const target = e.target.closest(
+        '[data-testid="nav-phone"], a[href^="tel:"]'
+      );
+
+      if (target) {
+        handleCallClick();
+      }
+    });
+  </script>
+
+  <!-- Restaurant Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sankalp - Taste of South",
+    "description": "Pure vegetarian South Indian restaurant on GMS Road in Dehradun, serving dosa, idli, filter coffee and South Indian thali. Features dedicated parking and family seating.",
+    "servesCuisine": [
+      "South Indian",
+      "Vegetarian"
+    ],
+    "keywords": "South Indian Restaurant, South Indian Restaurant Dehradun, Dosa, Idli, Filter Coffee, South Indian Thali, Pure Veg Restaurant",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "GMS Road",
+      "addressLocality": "Dehradun",
+      "addressRegion": "Uttarakhand",
+      "addressCountry": "IN"
+    },
+    "areaServed": [
+      {
+        "@type": "Place",
+        "name": "GMS Road"
+      },
+      {
+        "@type": "Place",
+        "name": "Ballupur Chowk"
+      },
+      {
+        "@type": "City",
+        "name": "Dehradun"
+      }
+    ],
+    "knowsAbout": [
+      "Dosa",
+      "Idli",
+      "Filter Coffee",
+      "South Indian Thali",
+      "South Indian Cuisine",
+      "Pure Vegetarian Cuisine"
+    ],
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Dedicated Parking",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Family Seating",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Pure Vegetarian",
+        "value": true
+      }
+    ],
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Nearby Landmark",
+        "value": "Ballupur Chowk"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Transit Accessibility",
+        "value": "Accessible from Dehradun Railway Station"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Application / Runtime Scripts -->
+  <script>
+    window.addEventListener("error", function (e) {
+      if (
+        e.error instanceof DOMException &&
+        e.error.name === "DataCloneError" &&
+        e.message &&
+        e.message.includes("PerformanceServerTiming")
+      ) {
+        e.stopImmediatePropagation();
+        e.preventDefault();
+      }
+    }, true);
+  </script>
+
+  <script defer src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+  <script defer src="main.60f09b56.js"></script>
+</head>
+
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <a id="emergent-badge" target="_blank" href="https://app.emergent.sh/?utm_source=emergent-badge" style="display:inline-flex!important;box-sizing:border-box;width:178px;height:40px;padding:8px 12px 8px 12px;align-items:center!important;gap:8px;border-radius:50px!important;background:#000!important;position:fixed!important;bottom:16px;right:16px;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,&quot;z-index:9999!important">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M15.5702 8.13142C15.7729 8.0412 16.0007 8.18878 15.9892 8.4103C15.8374 11.3192 14.0965 14.0405 11.2531 15.3065C8.40964 16.5725 5.2224 16.0453 2.95912 14.2117C2.78676 14.072 2.82955 13.804 3.03219 13.7137L4.95677 12.8568C5.04866 12.8159 5.15446 12.823 5.24204 12.8725C6.73377 13.7153 8.59176 13.8649 10.2772 13.1145C11.9626 12.3641 13.0947 10.8833 13.4665 9.21075C13.4883 9.11256 13.5539 9.02918 13.6457 8.98827L15.5702 8.13142Z" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3066 4.74698L15.5067 5.19653C15.5759 5.35178 15.5061 5.53366 15.3508 5.60278L1.29992 11.8586C1.14467 11.9278 0.962794 11.8579 0.893675 11.7027L0.701732 11.2716L0.693457 11.2531C-1.10317 7.21778 0.711626 2.49007 4.74692 0.693443C8.78221 -1.10318 13.51 0.711693 15.3066 4.74698ZM2.82356 8.55367C2.63552 8.63739 2.41991 8.51617 2.40853 8.31065C2.28373 6.05724 3.53858 3.85787 5.72286 2.88536C7.90715 1.91286 10.3813 2.45199 11.9724 4.05256C12.1175 4.19854 12.0633 4.43988 11.8753 4.5236L2.82356 8.55367Z" fill="white"/>
-        </svg>
-        <p style="color:#fff!important;font-family:Inter,sans-serif!important;font-size:13px!important;font-style:normal!important;font-weight:600!important;line-height:20px!important;margin:0!important;white-space:nowrap!important">Made with Emergent</p>
-    </a>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <div id="root"></div>
+
+  <!--
+    Visiting Dehradun? Section
+    If your React application renders this content dynamically,
+    use this copy inside the corresponding landing-page component.
+  -->
+  <section id="visiting-dehradun" aria-labelledby="visiting-dehradun-title">
+    <h2 id="visiting-dehradun-title">Visiting Dehradun?</h2>
+
+    <ul>
+      <li>
+        <strong>Arriving by train?</strong>
+        Just <strong>12 minutes from Dehradun Railway Station</strong>,
+        Sankalp on GMS Road is an easy, elegant stop before you head onward.
+      </li>
+
+      <li>
+        <strong>Driving towards Mussoorie?</strong>
+        Enjoy <strong>easy parking on GMS Road</strong>, settle in,
+        and make your journey more relaxed.
+      </li>
+
+      <li>
+        <strong>Road-trip ready.</strong>
+        Enjoy a delicious South Indian meal with
+        <strong>piping hot filter coffee</strong> and quick, attentive service
+        before getting back on the road.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Emergent Badge -->
+  <a id="emergent-badge"
+     target="_blank"
+     rel="noopener noreferrer"
+     href="https://app.emergent.sh/?utm_source=emergent-badge"
+     aria-label="Made with Emergent"
+     style="display:inline-flex!important;box-sizing:border-box;width:178px;height:40px;padding:8px 12px;align-items:center!important;gap:8px;border-radius:50px!important;background:#000!important;position:fixed!important;bottom:16px;right:16px;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,sans-serif;z-index:9999!important">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="16"
+         height="16"
+         viewBox="0 0 16 16"
+         fill="none"
+         aria-hidden="true">
+      <path d="M15.5702 8.13142C15.7729 8.0412 16.0007 8.18878 15.9892 8.4103C15.8374 11.3192 14.0965 14.0405 11.2531 15.3065C8.40964 16.5725 5.2224 16.0453 2.95912 14.2117C2.78676 14.072 2.82955 13.804 3.03219 13.7137L4.95677 12.8568C5.04866 12.8159 5.15446 12.823 5.24204 12.8725C6.73377 13.7153 8.59176 13.8649 10.2772 13.1145C11.9626 12.3641 13.0947 10.8833 13.4665 9.21075C13.4883 9.11256 13.5537 9.02918 13.6457 8.98827L15.5702 8.13142Z" fill="white"/>
+      <path fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.3066 4.74698L15.5067 5.19653C15.5759 5.35178 15.5061 5.53366 15.3508 5.60278L1.29992 11.8586C1.14467 11.9278 0.962794 11.8579 0.893675 11.7027L0.701732 11.2716L0.693457 11.2531C-1.10317 7.21778 0.711626 2.49007 4.74692 0.693443C8.78221 -1.10318 13.51 0.711693 15.3066 4.74698ZM2.82356 8.55367C2.63539 8.63739 2.41991 8.51617 2.40853 8.31065C2.2834 6.05724 3.53858 3.85787 5.72286 2.88536C7.90715 1.91286 10.3813 2.45199 11.9724 4.05256C12.1175 4.19854 12.063 4.43988 11.8753 4.5236L2.82356 8.55367Z"
+            fill="white"/>
+    </svg>
+
+    <span style="color:#fff!important;font-family:Inter,sans-serif!important;font-size:13px!important;font-weight:600!important;line-height:20px!important;white-space:nowrap!important">
+      Made with Emergent
+    </span>
+  </a>
 </body>
 </html>
