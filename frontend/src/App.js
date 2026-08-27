@@ -415,6 +415,11 @@ const LocationSection = () => {
               </span>
               <h2 className="font-playfair text-3xl md:text-4xl text-white font-bold mb-8">
                 Sankalp - Taste of South
+                <p className="text-gray-300 leading-relaxed mb-8 max-w-xl">
+                  Visit Sankalp for authentic South Indian food on GMS Road, Dehradun.
+                  We offer comfortable family seating, convenient parking, fresh dosas,
+                  South Indian favourites and piping hot filter coffee.
+                </p>    
               </h2>
               
               <div className="space-y-6">
@@ -427,6 +432,10 @@ const LocationSection = () => {
                     <p className="text-gray-400 leading-relaxed">
                       Reliance Trends Complex, Behind Hotel Kamla Palace,<br />
                       GMS Road, Dehradun - 248001
+                    </p>
+                    <p className="text-gray-400 leading-relaxed mt-2">
+                      Convenient for guests travelling from Dehradun Railway Station,
+                      City Center and towards Mussoorie.
                     </p>
                   </div>
                 </div>
