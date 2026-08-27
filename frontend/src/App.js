@@ -157,14 +157,18 @@ const Navbar = () => {
 const HeroSection = () => {
   return (
     <section className="hero-section" data-testid="hero-section">
-      <div 
-        className="hero-bg"
-        style={{
-          backgroundImage: `url(https://sankalprestaurants.com/wp-content/uploads/2021/08/Sankalp-Restauratn-Website-Signature-Dish-01-1024x819.jpg)`
-        }}
-      >
-        <div className="hero-overlay absolute inset-0"></div>
-      </div>
+     <div className="hero-bg">
+  <img
+    src="https://sankalprestaurants.com/wp-content/uploads/2021/08/Sankalp-Restauratn-Website-Signature-Dish-01-1024x819.jpg"
+    alt="Signature dosa at Sankalp South Indian Restaurant on GMS Road, Dehradun"
+    className="hero-image"
+    width="1024"
+    height="819"
+    loading="eager"
+    fetchPriority="high"
+  />
+  <div className="hero-overlay absolute inset-0"></div>
+</div>
       
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <span className="font-italiana text-[#D4AF37] text-lg md:text-xl tracking-[0.2em] uppercase mb-4 block animate-fade-in-up">
@@ -265,7 +269,7 @@ const SignatureDishes = () => {
               <div className="overflow-hidden">
                 <img 
                   src={dish.url} 
-                  alt={dish.title}
+                  alt={`${dish.title} at Sankalp GMS Road, Dehradun`}
                   className="dish-image"
                   loading="lazy"
                 />
