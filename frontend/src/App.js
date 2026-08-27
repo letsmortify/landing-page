@@ -367,7 +367,64 @@ const Testimonials = () => {
   );
 };
 
-const MenuCTA = () => {
+const 
+const VisitingDehradun = () => {
+  return (
+    <section
+      id="visiting-dehradun"
+      className="section-padding bg-white"
+      aria-labelledby="visiting-dehradun-title"
+    >
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <span className="font-italiana text-[#D4AF37] text-base tracking-[0.2em] uppercase mb-3 block">
+            Easy Stop in Dehradun
+          </span>
+
+          <h2
+            id="visiting-dehradun-title"
+            className="font-playfair text-3xl md:text-4xl lg:text-5xl text-[#1A1A1A] font-bold"
+          >
+            Visiting Dehradun?
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="font-playfair text-xl font-semibold mb-3">
+              Arriving by Train
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Just 12 minutes from Dehradun Railway Station, Sankalp on GMS Road
+              is a convenient stop for a fresh South Indian meal.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-playfair text-xl font-semibold mb-3">
+              Driving Towards Mussoorie
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Stop for authentic South Indian food, piping hot filter coffee
+              and quick service before continuing towards Mussoorie.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-playfair text-xl font-semibold mb-3">
+              Easy Parking on GMS Road
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Convenient parking and comfortable family seating make Sankalp
+              an easy choice for families, groups and road-trip stops.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+MenuCTA = () => {
   return (
     <section className="menu-section py-20 px-6" data-testid="menu-cta-section">
       <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -594,6 +651,7 @@ function App() {
       <AwardsMarquee />
       <SignatureDishes />
       <Testimonials />
+      <VisitingDehradun />
       <MenuCTA />
       <LocationSection />
       <Footer />
@@ -601,5 +659,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
