@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "homepage": "https://letsmortify.github.io/sankalp-dehradun",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
