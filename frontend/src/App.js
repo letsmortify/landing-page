@@ -125,12 +125,13 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className={`md:hidden ${scrolled ? "text-gray-700" : "text-white"}`}
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          data-testid="mobile-menu-btn"
-        >
-          {aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}}
-        </button>
+         className={`md:hidden ${scrolled ? "text-gray-700" : "text-white"}`}
+         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+         aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+         data-testid="mobile-menu-btn"
+>
+  {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+</button>
       </div>
 
       {/* Mobile Menu */}
